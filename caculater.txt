@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator by function</title>   
+    <style>
+        
+    </style> 
+</head>
+<body>
+    <h1>Calculator by function</h1>
+
+    <form >
+        <input type="number"  id="num1" value="" >
+        <input type="number"  id="num2" value="" >
+        <br><br>
+   
+        <input type="button" onclick ="calculator(value)" id="f1" value="+"> 
+        <input type="button" onclick ="calculator(value)" id="f2" value="-">
+        <input type="button" onclick ="calculator(value)" id="f3"  value="*">
+        <input type="button" onclick ="calculator(value)" id="f4" value="/">
+        
+        <br><br>
+         Result 
+         <input id = "show" type="number" value="">
+         <input type="reset">
+</form>
+    <script>
+        
+        
+       function calculator(value) {  
+
+        var x = document.getElementById("num1").value;
+         var  a = parseInt(x);
+        
+         var y = document.getElementById("num2").value;
+        var b = parseInt(y);
+
+        var shown;
+        if (value=='+') {
+          var add = a+b;
+          document.getElementById("show").value = (add);
+      
+        }
+        else  if (value =='-') {
+          var  sub = a-b;
+           document.getElementById("show").value = sub;
+        
+        }
+        else if (value=='*'){
+           var mul = a*b;
+        
+            document.getElementById("show").value = mul;
+           
+        }
+         else if (value=='/'){
+           var div  = a/b;
+           console.log(div);
+            document.getElementById("show").value = div;
+          
+        }
+        }
+    </script>
+</body>
+</html>
