@@ -1,4 +1,77 @@
-qqwweer
-Pradeep
-Arun
-mikku
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color game</title>
+</head>
+<style>
+    #d1{
+        height:200px;
+        padding: 40px;
+    }
+    #d1{
+        background-color: blue;
+        color: white;
+    }
+#btn1{
+    background-color: red;
+    color:white;
+    margin-left: 100px;
+}
+#btn2{
+    background-color: black;
+    color:white;
+     margin-left: 300px;
+}
+#btn3{
+    background-color: green;
+    color:white;
+     margin-left: 300px;
+}
+#btn4{
+    background-color: gray;
+    color:white;
+     margin-left: 300px;
+}
+#btn5{
+    margin-left: 600px;
+}
+</style>
+<body>
+    <div id="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque dolores, recusandae necessitatibus voluptas quae veritatis magni quod numquam velit illo, dolore modi iste nihil aut sequi obcaecati est ex non natus! Consequatur ullam quo dolorum autem placeat provident accusantium fugit veniam? Distinctio harum iusto perspiciatis tenetur voluptatum neque iure, sunt at expedita beatae, error, ab praesentium quod placeat minus! Dolor ut cupiditate itaque quod, numquam obcaecati maiores ipsam architecto asperiores ratione eveniet excepturi vel suscipit quibusdam exercitationem aut voluptatem! Laboriosam impedit at quasi, nesciunt, fugit officiis quibusdam quaerat culpa ea consectetur officia rerum voluptate et distinctio minus deserunt nisi nam debitis placeat doloremque asperiores, repellendus alias id. Beatae fugit ipsum voluptate dolorem architecto dolorum, consectetur, consequuntur inventore voluptatum nemo incidunt expedita! Ducimus, eveniet fugit fuga explicabo excepturi quos amet ratione magnam consequuntur! Reprehenderit pariatur voluptatibus possimus saepe doloremque! Aspernatur, quae? Quibusdam dignissimos ducimus ratione quaerat ad modi officia perspiciatis facere debitis? Corrupti, beatae nulla deserunt rem saepe quos fugiat minima harum sunt expedita culpa eos commodi placeat autem neque cum modi velit vero. Fugit veritatis modi aut atque esse, nobis placeat et sequi ipsa est dicta magnam quisquam harum omnis illum perspiciatis laboriosam? Animi tempora laborum similique cumque accusamus.</div>
+    <br><br>
+     <div id="d2"> 
+        <button id="btn1" onclick="color(value)" value="0">Red</button> 
+        <button id="btn2" onclick="color(value)" value="1">Black</button>
+        <button id="btn3" onclick="color(value)" value="2">Green</button>
+        <button id="btn4" onclick="color(value)" value="3">Gray</button>
+     </div>
+    <br><br><br>
+        <button id="btn5" onclick="color(value)" value="4">Default</button>
+    </div>
+
+    <script>
+      
+      function color(value) {
+        
+        if (value==0) {
+            document.getElementById("d1").style.backgroundColor="red"; 
+            
+        } else if (value==1){
+            document.getElementById("d1").style.backgroundColor="black";
+        }
+        else if (value==2){
+            document.getElementById("d1").style.backgroundColor="green";
+        }
+        else if (value==3){
+            document.getElementById("d1").style.backgroundColor="grey";
+        }
+        else if (value==4){
+        document.getElementById("d1").style.backgroundColor="blue";
+      }
+    }
+    </script>
+
+</body>
+</html>
